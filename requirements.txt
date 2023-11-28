@@ -24,7 +24,7 @@ cinemagoer==2023.5.1
 opencv-python-headless==4.7.0.68
 telegraph==2.2.0
 python-dotenv==0.21.1
-Pillow==9.4.0
+Pillow==10.0.1
 psutil==5.9.4
 NumPy
 wheel

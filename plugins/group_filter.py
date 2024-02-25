@@ -106,19 +106,19 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"❄️ ᴩᴀɢᴇꜱ {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]
+            [InlineKeyboardButton("«««Back", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"⚜ ᴩᴀɢᴇꜱ {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} ⚜", callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"❄️ {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"⚜ {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} ⚜", callback_data="pages"),
+             InlineKeyboardButton("𝙽𝚎𝚡𝚝»»»", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"❄️ {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("«««Back", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"⚜ {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} ⚜", callback_data="pages"),
+                InlineKeyboardButton("𝙽𝚎𝚡𝚝»»»", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     
@@ -202,13 +202,13 @@ async def auto_filter(client, msg, spoll=False):
 
     if SHORT_URL and SHORT_API:          
         if settings["button"]:
-            btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}"))] for file in files ]
+            btn = [[InlineKeyboardButton(text=f"🎬[{get_size(file.file_size)}]🎥{file.file_name}", url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}"))] for file in files ]
         else:
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}")),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}"))] for file in files ]
     else:        
         if settings["button"]:
-            btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}')] for file in files ]
+            btn = [[InlineKeyboardButton(text=f"🎬[{get_size(file.file_size)}]🎥{file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}')] for file in files ]
         else:
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'{pre}#{req}#{file.file_id}')] for file in files ] 
@@ -219,12 +219,12 @@ async def auto_filter(client, msg, spoll=False):
         temp.GP_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"❄️ ᴩᴀɢᴇꜱ 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-             InlineKeyboardButton(text="➡️ ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"⚜ ᴩᴀɢᴇꜱ 1/{math.ceil(int(total_results) / 6)} ⚜", callback_data="pages"),
+             InlineKeyboardButton(text="𝙽𝚎𝚡𝚝»»»", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="❄️ ᴩᴀɢᴇꜱ 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="⚜ ᴩᴀɢᴇꜱ 1/1 ⚜", callback_data="pages")]
         )
     
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None

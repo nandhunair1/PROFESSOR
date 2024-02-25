@@ -101,7 +101,7 @@ def get_reply_markup(query):
         InlineKeyboardButton("⭕️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭕️", url="https://t.me/tvseriezzz_updates")
         ],[
         InlineKeyboardButton('⟳ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ', switch_inline_query_current_chat=query)]]
-        return InlineKeyboardMarkup(buttons)
+    return InlineKeyboardMarkup(buttons)
 
 
 

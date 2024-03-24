@@ -83,6 +83,11 @@ async def next_page(bot, query):
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
     try: n_offset = int(n_offset)
     except: n_offset = 0
+ 
+ 
+    if not files: return
+    settings = await get_settings(query.message.chat.id)
+    nxreq  = query.from_user.id if query.from_user else 0
 
     if SHORT_URL and SHORT_API:          
         if settings["button"]:

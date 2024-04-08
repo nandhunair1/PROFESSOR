@@ -209,8 +209,8 @@ async def pm_spoll_choker(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏ Mᴏᴠɪᴇ Iɴ Tʜᴀᴛ Nᴀᴍᴇ", quote=True)
-        await asyncio.sleep(10)
+        k = await msg.reply("ഏതു മൂവി ആണോ വേണ്ടത് അതു Spelling തെറ്റാതെ ഗ്രൂപ്പിൽ ചോദിച്ചാൽ മാത്രമേ ലഭിക്കുകയുള്ളു...!!\n\nWhich movie you want, you can get it only if you ask in the group without making a mistake in spelling...!!‼️\n\n𝗗𝗼𝗻𝘁 𝗮𝗱𝗱 𝘄𝗼𝗿𝗱𝘀 & 𝘀𝘆𝗺𝗯𝗼𝗹𝘀 𝗹𝗶𝗸𝗲 , . -  send,link movie,series,𝗲𝘁𝗰‼️\n\nOtt release ആവുന്നതിനുമുന്നെ മൂവീസ്, സീരീസ് ചൊതിക്കരുത് 😢\n@tvseriezzz_updates ജോയിൻ ചെയ്\n\nDont ask for movies and series before Ott release 😢\n\nJoin @tvseriezzz_updates", quote=True)
+        await asyncio.sleep(150)
         return await k.delete()
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
@@ -231,7 +231,7 @@ async def pm_spoll_choker(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("ഏതു മൂവി ആണോ വേണ്ടത് അതു Spelling തെറ്റാതെ ഗ്രൂപ്പിൽ ചോദിച്ചാൽ മാത്രമേ ലഭിക്കുകയുള്ളു...!!/n/nWhich movie you want, you can get it only if you ask in the group without making a mistake in spelling...!!‼️/n/n𝗗𝗼𝗻𝘁 𝗮𝗱𝗱 𝘄𝗼𝗿𝗱𝘀 & 𝘀𝘆𝗺𝗯𝗼𝗹𝘀 𝗹𝗶𝗸𝗲 , . -  send,link movie,series,𝗲𝘁𝗰‼️/n/nOtt release ആവുന്നതിനുമുന്നെ മൂവീസ്, സീരീസ് ചൊതിക്കരുത് 😢/n@tvseriezzz_updates ജോയിൻ ചെയ്/n/nDont ask for movies and series before Ott release 😢/nJoin @tvseriezzz_updates", quote=True)
+        k = await msg.reply("ഏതു മൂവി ആണോ വേണ്ടത് അതു Spelling തെറ്റാതെ ഗ്രൂപ്പിൽ ചോദിച്ചാൽ മാത്രമേ ലഭിക്കുകയുള്ളു...!!\n\nWhich movie you want, you can get it only if you ask in the group without making a mistake in spelling...!!‼️\n\n𝗗𝗼𝗻𝘁 𝗮𝗱𝗱 𝘄𝗼𝗿𝗱𝘀 & 𝘀𝘆𝗺𝗯𝗼𝗹𝘀 𝗹𝗶𝗸𝗲 , . -  send,link movie,series,𝗲𝘁𝗰‼️\n\nOtt release ആവുന്നതിനുമുന്നെ മൂവീസ്, സീരീസ് ചൊതിക്കരുത് 😢\n@tvseriezzz_updates ജോയിൻ ചെയ്\n\nDont ask for movies and series before Ott release 😢\n\nJoin @tvseriezzz_updates", quote=True)
         await asyncio.sleep(150)
         return await k.delete()
     temp.PM_SPELL[str(msg.id)] = movielist

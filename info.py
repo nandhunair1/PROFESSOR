@@ -52,6 +52,18 @@ BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 SHORT_URL = environ.get("SHORT_URL")
 SHORT_API = environ.get("SHORT_API")
 
+# FSUB
+auth_channel = environ.get('AUTH_CHANNEL')
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+# Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
+REQ_CHANNEL1 =environ.get("REQ_CHANNEL1", None)
+REQ_CHANNEL1 = (int(REQ_CHANNEL1) if REQ_CHANNEL1 and id_pattern.search(REQ_CHANNEL1) else False) if REQ_CHANNEL1 is not None else None
+
+REQ_CHANNEL2 =environ.get("REQ_CHANNEL2", None)
+REQ_CHANNEL2 = (int(REQ_CHANNEL2) if REQ_CHANNEL1 and id_pattern.search(REQ_CHANNEL2) else False) if REQ_CHANNEL2 is not None else None
+
+JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
+
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001536282541'))

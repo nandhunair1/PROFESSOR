@@ -62,7 +62,7 @@ REQ_CHANNEL1 = (int(REQ_CHANNEL1) if REQ_CHANNEL1 and id_pattern.search(REQ_CHAN
 REQ_CHANNEL2 =environ.get("REQ_CHANNEL2", None)
 REQ_CHANNEL2 = (int(REQ_CHANNEL2) if REQ_CHANNEL1 and id_pattern.search(REQ_CHANNEL2) else False) if REQ_CHANNEL2 is not None else None
 
-JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
+JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URL)
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))

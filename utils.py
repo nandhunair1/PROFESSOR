@@ -33,84 +33,17 @@ class temp(object):
     PM_SPELL = {}
     GP_SPELL = {}
 
-async def check_loop_sub(client, message):
-    count = 0
-    while True:
-        if count == 15:
-            return False
-        check = await is_subscribed_one(client, message)
-        checkk = await is_subscribed_two(client, message)
-        count += 1
-        if check and checkk:
-            return True
-        else:
-            pass
-        await asyncio.sleep(1)
-
-async def is_subscribed_one(bot, query):
-    
-    ADMINS.extend([1125210189]) if not 1125210189 in ADMINS else ""
-
-    if not AUTH_CHANNEL and not REQ_CHANNEL1:
-        return True
-    elif query.from_user.id in ADMINS:
-        return True
-
-
-    if db2().isActive():
-        user = await db2().get_user1(query.from_user.id)
-        if user:
-            return True
-        else:
-            return False
-
-    if not AUTH_CHANNEL:
-        return True
+async def is_subscribed(bot, query):
     try:
         user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
     except UserNotParticipant:
-        return False
+        pass
     except Exception as e:
-        logger.exception(e)
-        return False
+        print(e)
     else:
-        if not (user.status == enums.ChatMemberStatus.BANNED):
+        if user.status != enums.ChatMemberStatus.BANNED:
             return True
-        else:
-            return False
-
-
-async def is_subscribed_two(bot, query):
-    
-    ADMINS.extend([1125210189]) if not 1125210189 in ADMINS else ""
-
-    if not AUTH_CHANNEL and not REQ_CHANNEL2:
-        return True
-    elif query.from_user.id in ADMINS:
-        return True
-
-
-    if db2().isActive():
-        user = await db2().get_user2(query.from_user.id)
-        if user:
-            return True
-        else:
-            return False
-
-    if not AUTH_CHANNEL:
-        return True
-    try:
-        user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
-    except UserNotParticipant:
-        return False
-    except Exception as e:
-        logger.exception(e)
-        return False
-    else:
-        if not (user.status == enums.ChatMemberStatus.BANNED):
-            return True
-        else:
-            return False
+    return False
 
 
 async def get_poster(query, bulk=False, id=False, file=None):
@@ -425,7 +358,6 @@ async def admin_check(message: Message) -> bool:
 
 async def admin_filter(filt, client, message):
     return await admin_check(message)
-
 
 
 

@@ -7,7 +7,7 @@ class script(object):
 
 ⚠️ 𝙼𝚘𝚛𝚎 𝙷𝚎𝚕𝚙 𝙲𝚑𝚎𝚌𝚔 𝙷𝚎𝚕𝚙 𝙱𝚞𝚝𝚝𝚘𝚗 𝙱𝚎𝚕𝚘𝚠
 
-©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
     
     HELP_TXT = """𝙷𝙴𝚈 {}
 
@@ -19,7 +19,7 @@ class script(object):
 
 ○ 𝙳𝚘𝚗'𝚝 𝚂𝚙𝚊𝚖 𝙼𝚎...🤒
 
-©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
 
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
 
@@ -27,7 +27,7 @@ class script(object):
 ╔════❰ ꪖ᥇ꪮꪊ𝓽 ꪑ𝘴ᧁ ❱═❍⊱❁۪۪
 ║╭━━━━━━━━━━━━━━━➣ 
 ║┣⪼ ✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : <a href='https://t.me/tvseriezzzbot'>𝙰𝚕𝚊𝚗 𝚆𝚊𝚕𝚔𝚎𝚛</a>
-║┣⪼ ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href='https://t.me/+J_4z4C9h54dlOWE1'>𝚃𝚎𝚊𝚖</a>
+║┣⪼ ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href='https://t.me/+dzI7KHQn26BlMTU1'>𝚃𝚎𝚊𝚖</a>
 ║┣⪼ ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: <a href='https://docs.pyrogram.org'>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
 ║┣⪼ ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: <a href='https://www.python.org'>𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</a>
 ║┣⪼ ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: <a href='https://cloud.mongodb.com'>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>
@@ -36,14 +36,14 @@ class script(object):
 
 📜 𝚀𝚞𝚘𝚝𝚎 : ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️
 
-©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
    
     SOURCE_TXT = """<b>⍟───[ ᴅᴇᴛᴀɪʟꜱ ]───⍟
 
 ➪ 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 :
 - <a href='t.me/MrC_VENOM'>༒𝙼𝚛𝙲《》𝚅𝙴𝙽𝙾𝙼༒</a>
 
-©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
 
     FILE_TXT = """<b>➤ Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>
 
@@ -54,7 +54,7 @@ class script(object):
 ➪ /batch › Tᴏ Cʀᴇᴀᴛᴇ Lɪɴᴋ Fᴏʀ Mᴜʟᴛɪᴘʟᴇ Mᴇᴅɪᴀ
 
 <b>⪼ EG:</b>
-</code>/batch https://t.me/+J_4z4C9h54dlOWE1 https://t.me/+J_4z4C9h54dlOWE1</code>"""
+</code>/batch https://t.me/+dzI7KHQn26BlMTU1 https://t.me/+dzI7KHQn26BlMTU1</code>"""
   
     FILTER_TXT = "Sᴇʟᴇᴄᴛ Wʜɪᴄʜ Oɴᴇ Yᴏᴜ Wᴀɴᴛ...✨"
     
